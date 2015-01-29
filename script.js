@@ -1,8 +1,7 @@
 
 $(document).ready(function() {
-	var size = 16
 	var redo = function(size) {
-		var box_size = 480/size
+		var box_size = 320/size
 		for (var r=0; r<size; r++) {
 			$('table').append("<tr></tr>");
 		};
@@ -12,12 +11,11 @@ $(document).ready(function() {
 		$('.grid').mouseenter(function() {
 			$(this).addClass('hover')
 		});
-		console.log('test')
 	}
-	redo(16);
+	redo(64);
 	$('#reset').click(function() {
 		$('.grid').removeClass('hover');
-		var size = prompt("What size grid do you want?");
+		var size = prompt("Select the number of columns/rows.");
 		console.log(size);
 		$('tbody').empty();
 		redo(size);
