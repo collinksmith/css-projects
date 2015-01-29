@@ -1,0 +1,26 @@
+
+#table_grid {
+	margin: auto;
+}
+
+.grid {
+	/*height: 10px; width: 10px;*/
+	border: 0px ridge #dddddd;
+	background-color: #eeeeee;
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-spacing: 0;
+	border-collapse: separate;
+}
+tbody {
+	margin: 0; padding: 0;
+}
+.hover {
+	background-color: black;
+}
+#button {
+	width: 100px;
+	margin: auto;
+}
