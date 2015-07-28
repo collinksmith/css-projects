@@ -6,23 +6,23 @@
   padding: 1px 6px;
 }
 
-.navigation {
+.notification {
   position: relative;
 }
 
-.navigation:hover .navigation-dropdown {
+.notification:hover .notification-dropdown {
   display: block;
 }
 
-.navigation:hover .badge {
+.notification:hover .badge {
   background-color: #f00;
 }
 
-.navigation:hover .notification-button {
+.notification:hover {
   background-color: #000;
 }
 
-.navigation-dropdown {
+.notification-dropdown {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -37,19 +37,19 @@
   overflow: hidden;
 }
 
-.navigation-dropdown li {
+.notification-dropdown li {
   border-top: solid 1px #aaa;
   width: 100%;
 }
 
-.navigation-dropdown a {
+.notification-dropdown a {
   border-left: 0px;
 }
 
-.navigation-dropdown a:hover {
+.notification-dropdown a:hover {
   background-color: #ccc;
 }
 
-.navigation-dropdown li:first-child {
+.notification-dropdown li:first-child {
   border-top: 0px;
 }
