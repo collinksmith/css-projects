@@ -3,11 +3,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  background-color: #eee;
 }
 
 .header {
   background-color: #f00;
-  height: 40px;
+  height: 39px;
+  z-index: 1;
+  position: relative;
 }
 
 .header-nav {
