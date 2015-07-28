@@ -24,11 +24,11 @@ body {
 .header a {
   display: block;
   padding: 10px 20px;
-  border-left: solid 1px white;
+  border-left: solid 1px #ccc;
 }
 
 .header-list li:last-child {
-  border-right: solid 1px white;
+  border-right: solid 1px #ccc;
 }
 
 .header-logo {
