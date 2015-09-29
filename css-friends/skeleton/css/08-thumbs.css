@@ -1,1 +1,16 @@
 /* PHASE 8: Thumbs */
+.thumbs {
+
+}
+
+  .thumbs li {
+    width: 60px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .thumbs li:nth-child(3n - 1) {
+    margin-left: 0.7em; margin-right: 0.7em;
+  }
