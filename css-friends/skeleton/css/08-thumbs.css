@@ -25,3 +25,17 @@
   .thumb > img {
     border-radius: 5px;
   }
+
+  .thumb:hover:before {
+    display: block;
+    position: absolute;
+    content: attr(title);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 0.3em 0.6em;
+  }
