@@ -1,7 +1,7 @@
 /* PHASE 10: Posts */
 .post {
-  padding-top: 1em;
-  margin-top: 1em;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 .post-thumb {
@@ -9,7 +9,43 @@
 }
 
 .post-content {
+  padding-left: 1.5em;
   float: left;
   width: calc(100% - 60px);
-
 }
+
+  .post-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .post-content p {
+    font-size: 16px;
+  }
+
+.post-footer {
+  padding-top: 20px;
+}
+
+  .post-footer ul li {
+    display: inline;
+  }
+
+.post-info {
+  float: left;
+  color: #aaa;
+}
+
+.post-info li:not(:last-child):after {
+  content: ' ·';
+}
+
+.post-social {
+  float: right;
+  font-size: 16px;
+}
+
+  .post-social li {
+    margin-left: 5px;
+  }
