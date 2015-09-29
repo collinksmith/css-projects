@@ -26,8 +26,8 @@
     border-radius: 5px;
   }
 
-  .thumb:hover:before {
-    display: block;
+  .thumb:before {
+    display: none;
     position: absolute;
     content: attr(title);
     top: -30px;
@@ -40,15 +40,19 @@
     padding: 0.3em 0.6em;
   }
 
-  .thumb:hover:after {
+  .thumb:after {
+    display: none;
     position: absolute;
     content: '';
     top: -7px;
     left: 50%;
     transform: translateX(-50%);
-    height: 0; width: 0;
-    border-top: 5px solid black;
-    background: transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.9);
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
+  }
+
+  .thumb:hover:before,
+  .thumb:hover:after {
+    display: block;
   }
