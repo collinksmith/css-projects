@@ -39,3 +39,16 @@
     border-radius: 4px;
     padding: 0.3em 0.6em;
   }
+
+  .thumb:hover:after {
+    position: absolute;
+    content: '';
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0; width: 0;
+    border-top: 5px solid black;
+    background: transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
