@@ -1,16 +1,27 @@
 /* PHASE 8: Thumbs */
-.thumbs {
+.profile-friends {
 
 }
 
-  .thumbs li {
-    width: 60px;
+  .profile-friends li {
     float: left;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 10px;
+    width: 60px;
+    margin-bottom: 10px;
   }
 
-  .thumbs li:nth-child(3n - 1) {
+  .profile-friends li:nth-child(3n - 1) {
     margin-left: 0.7em; margin-right: 0.7em;
+  }
+
+.thumb {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+  .thumb > img {
+    border-radius: 5px;
   }
