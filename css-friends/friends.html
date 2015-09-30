@@ -34,6 +34,7 @@
           </li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">Settings</a></li>
+          <li><a href="#" class="js-modal-open">Sign In</a></li>
         </ul>
       </nav>
   </header>
@@ -127,10 +128,10 @@
             </textarea>
           </div>
           <div class="submit">
-          <submit>
-            <button>Post to Wall</button>
-            <span class="button-alternative">or <strong>Cancel</strong></span>
-          </submit>
+            <submit>
+              <button>Post to Wall</button>
+              <span class="button-alternative">or <strong>Cancel</strong></span>
+            </submit>
           </div>
         </fieldset>
       </form>
@@ -170,14 +171,45 @@
     </ul>
   </footer>
 
-  <script src="./shared/js/jquery.js"></script>
-
   <div class="modal">
-    <div class="modal-screen">
-    </div>
-    <div class="modal-form">
-    </div>
+    <div class="modal-screen js-modal-close"></div>
+    <form class="modal-form">
+      <span class="modal-close-btn js-modal-close">&times;</span>
+      <h2>Welcome</h2>
+      <p>Please sign in to continue</p>
+
+      <div class="input">
+        <label for="form-title" class="input-label">Email</label>
+        <input class="input-value" id="form-title">
+      </div>
+      <div class="input">
+        <label for="form-password" class="input-label">Password</label>
+        <input type=password class="input-value" id="form-password">
+      </div>
+      <div class="submit">
+        <submit>
+          <button>Sign In</button>
+          <span class="button-alternative">or <strong>Cancel</strong></span>
+        </submit>
+      </div>
+    </form>
   </div>
 
+  <script src="./shared/js/jquery.js"></script>
+  <script>
+    $(function(){
+
+      $("body").on("click", ".js-modal-open", function(event){
+        event.preventDefault();
+        $(".modal").addClass("is-open");
+      });
+
+      $("body").on("click", ".js-modal-close", function(event){
+        event.preventDefault();
+        $(".modal").removeClass("is-open");
+      });
+
+    });
+  </script>
 </body>
 </html>

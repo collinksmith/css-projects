@@ -22,11 +22,12 @@
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 0.5em;
+    margin-top: 1em;
   }
 
   .input-value {
     background: white;
-    width: 100%;
+    width: calc(100% - 22px);
     padding: 0.7em;
     border-radius: 5px;
     font-size: 16px;

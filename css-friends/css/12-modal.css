@@ -13,9 +13,28 @@
   z-index: 3;
   left: 50%;
   transform: translateX(-50%);
+  background: white;
+  top: 100px;
+  border-radius: 5px;
+  padding: 1.5em;
+  width: 350px;
 }
 
-.modal-screen.is-open,
-.modal-form.is-open {
+.modal-form h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.modal.is-open > * {
   display: block;
 }
+
+.modal-close-btn {
+  font-size: 36px;
+  float: right;
+}
+
+  .modal-close-btn:hover{
+    color: red;
+    cursor: pointer;
+  }
