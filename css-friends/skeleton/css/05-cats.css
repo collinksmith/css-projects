@@ -8,16 +8,16 @@
   z-index: 1;
 }
 
-.content-header h1 {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 300;
-  position: absolute;
-  line-height: 1;
-  bottom: 20px;
-  left: 240px;
-  text-shadow: #000 0 0 10px;
-}
+  .content-header h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    position: absolute;
+    line-height: 1;
+    bottom: 20px;
+    left: 240px;
+    text-shadow: #000 0 0 10px;
+  }
 
 .content-header-button {
   position:absolute;
