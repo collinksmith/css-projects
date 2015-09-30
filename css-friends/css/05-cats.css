@@ -2,7 +2,7 @@
 .content-header {
   height: 200px;
   width: 900px;
-  background-image: url("../../shared/img/cats.jpg");
+  background-image: url("../shared/img/cats.jpg");
   background-size: 100%;
   position: relative;
   z-index: 1;
